@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>wenhui</title>
+  <title>hexo搭建 | wenhui</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wenhui">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="hexo搭建 安装nodejs(hexo需要node支持) 安装hexo框架 npm install -g hexo-cli 可以用hexo -v 验证是否安装成功 新建文件夹 在新建文件夹内按住shift右击打开poweshell窗口 或者cmd进入该文件夹内 输入命令hexo init(过程可能需要几分钟 具体看你网络状态) 启动博客 hexo s  在本地localhost:4000端口启动">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo搭建">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;hexo%E6%90%AD%E5%BB%BA&#x2F;index.html">
 <meta property="og:site_name" content="wenhui">
+<meta property="og:description" content="hexo搭建 安装nodejs(hexo需要node支持) 安装hexo框架 npm install -g hexo-cli 可以用hexo -v 验证是否安装成功 新建文件夹 在新建文件夹内按住shift右击打开poweshell窗口 或者cmd进入该文件夹内 输入命令hexo init(过程可能需要几分钟 具体看你网络状态) 启动博客 hexo s  在本地localhost:4000端口启动">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="en-resource:&#x2F;&#x2F;database&#x2F;718:1">
+<meta property="og:image" content="en-resource:&#x2F;&#x2F;database&#x2F;720:1">
+<meta property="og:image" content="en-resource:&#x2F;&#x2F;database&#x2F;722:0">
+<meta property="og:updated_time" content="2019-11-22T06:08:48.838Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="en-resource:&#x2F;&#x2F;database&#x2F;718:1">
   
     <link rel="alternative" href="/atom.xml" title="wenhui" type="application/atom+xml">
   
@@ -155,171 +162,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-typescript" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-hexo搭建" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/22/typescript/">typescript</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/22/typescript/" class="archive-article-date">
-  	<time datetime="2019-11-22T06:17:53.982Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-工作环境配置"><a href="#1-工作环境配置" class="headerlink" title="1.工作环境配置"></a>1.工作环境配置</h2><ol>
-<li>安装<br>npm i -g typescript ts-node</li>
-<li>编译<br>tsc XXXXX . ts</li>
-</ol>
-<h4 id="1-1vscode中如何配置自动编译-ts文件"><a href="#1-1vscode中如何配置自动编译-ts文件" class="headerlink" title="1.1vscode中如何配置自动编译.ts文件"></a>1.1vscode中如何配置自动编译.ts文件</h4><p>   一.tsc–init 生成tsconfig.json 找到outDirL”./js”<br>   二.点击终端  运行任务 选择监视tsconfig.json</p>
-<h4 id="1-2typescript-中的数据类型"><a href="#1-2typescript-中的数据类型" class="headerlink" title="1.2typescript 中的数据类型"></a>1.2typescript 中的数据类型</h4><p>   为了使编写更加规范 便于维护 增加了类型校验 </p>
-<p>   类型校验: 写ts代码必须指定类型<br><img src="H:%5Cimg%5CImage.png" alt="Image"></p>
-<h4 id="1-3typescript中的函数"><a href="#1-3typescript中的函数" class="headerlink" title="1.3typescript中的函数"></a>1.3typescript中的函数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">1.函数声明发</span><br><span class="line">    function run():string&#123;</span><br><span class="line">        return &quot;run&quot;</span><br><span class="line">        &#125;</span><br><span class="line">2.匿名函数</span><br><span class="line">    var fun2=function():number&#123;</span><br><span class="line">        return 123;</span><br><span class="line">    &#125;</span><br><span class="line">ts中定义方法传参</span><br><span class="line">    function getInfo(name:string,age:number):string&#123;</span><br><span class="line">        return &quot;$(name)---$(age)&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    alert(getInfo(&quot;zhangsan&quot;,20));</span><br><span class="line">    </span><br><span class="line">    function getInfo=function(name:string,age:number):string&#123;</span><br><span class="line">        return &quot;$(name)---$(age)&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    alert(getInfo(&quot;zhangsan&quot;,40));</span><br><span class="line"></span><br><span class="line">没有返回值得方法</span><br><span class="line">    function run:void&#123;</span><br><span class="line">        console.log(&apos;run&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">    run();</span><br></pre></td></tr></table></figure>
-<h5 id="1-3-1方法可选取参数"><a href="#1-3-1方法可选取参数" class="headerlink" title="1.3.1方法可选取参数"></a>1.3.1方法可选取参数</h5><p>   es5里面方法的实参和形参可以不一样到但是ts中必须要一样 如果不一样就需要配置可选参数(在该参数后面加问号)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function getInfo(name:string,age?:number):string&#123;</span><br><span class="line">    if(age)&#123;</span><br><span class="line">        return &quot;$(name)---$(age)&quot;</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        return &quot;$(name)---年龄保密&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">alert(getInfo(&quot;zhangsan&quot;,20));</span><br></pre></td></tr></table></figure>
-<p>注意:可选参数必须配置到参数的最后面 </p>
-<h5 id="1-3-2默认参数"><a href="#1-3-2默认参数" class="headerlink" title="1.3.2默认参数"></a>1.3.2默认参数</h5><p>调用方法可以指定一个默认参数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function getInfo(name:string,age:number=20):string&#123;</span><br><span class="line">      if(age)&#123;</span><br><span class="line">          return &quot;$(name)---$(age)&quot;</span><br><span class="line">      &#125;else&#123;</span><br><span class="line">          return &quot;$(name)---年龄保密&quot;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  alert(getInfo(&quot;zhangsan&quot;));</span><br><span class="line">  alert(getInfo(&quot;zhangsan&quot;,30));</span><br></pre></td></tr></table></figure>
-<h5 id="1-3-3剩余参数"><a href="#1-3-3剩余参数" class="headerlink" title="1.3.3剩余参数"></a>1.3.3剩余参数</h5><p>三点运算符 接受兴参数传过来的值<br>​    </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function sum(...result:number):number&#123;</span><br><span class="line">        var sum=0;</span><br><span class="line">        for (var i=0;i&lt;result;i++)&#123;</span><br><span class="line">            sum+=result[i];</span><br><span class="line">        &#125;</span><br><span class="line">            retrun sum</span><br><span class="line">  &#125;</span><br><span class="line">    alert(sum(1,2,3))</span><br></pre></td></tr></table></figure>
-
-<h5 id="1-3-4函数重载"><a href="#1-3-4函数重载" class="headerlink" title="1.3.4函数重载"></a>1.3.4函数重载</h5><p>java中方法的重载 重载是指两个或者两个以上同名函数,但是他们的参数不一样,这样就会出现函数重载的情况<br>ts中的重载,通过为同一函数提供多个函数类型定义来试下多种功能的目的<br>ts为了兼容es5es6重载的写法和java有区别</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function getInfo(str:string):string</span><br><span class="line">fonction getInfo(str:number):number</span><br><span class="line">function getInfo(str:any):any&#123;</span><br><span class="line">    if(typeof str===&quot;string&quot;)&#123;</span><br><span class="line">        return &quot;我叫:&quot;+str;</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        return &quot;我的年龄是&quot;+str;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">alert(getInfo(&quot;张三&quot;))</span><br><span class="line">alert(getInfo(&quot;20&quot;))</span><br><span class="line">alert(getInfo(true))//错误写法</span><br></pre></td></tr></table></figure>
-<h5 id="1-3-5箭头函数"><a href="#1-3-5箭头函数" class="headerlink" title="1.3.5箭头函数"></a>1.3.5箭头函数</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(()=&gt;&#123;</span><br><span class="line">    alert(&apos;run&apos;)</span><br><span class="line">&#125;,1000)</span><br></pre></td></tr></table></figure>
-<p>注意:this 指向上下文</p>
-<h4 id="1-4typescript中的类"><a href="#1-4typescript中的类" class="headerlink" title="1.4typescript中的类"></a>1.4typescript中的类</h4><p>es5中的类通过构造函数</p>
-<h5 id="1-4-1类的定义"><a href="#1-4-1类的定义" class="headerlink" title="1.4.1类的定义"></a>1.4.1类的定义</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Greeter &#123;</span><br><span class="line">  greeting: string;</span><br><span class="line">  constructor(message: string) &#123;</span><br><span class="line">      this.greeting = message;</span><br><span class="line">  &#125;</span><br><span class="line">  greet():string &#123;</span><br><span class="line">      alert(&quot;Hello, &quot; + this.greeting);</span><br><span class="line">      return &quot;Hello, &quot; + this.greeting;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">let greeter = new Greeter(&quot;world&quot;);</span><br><span class="line">greeter.greet()</span><br></pre></td></tr></table></figure>
-
-<h5 id="1-4-2类的继承"><a href="#1-4-2类的继承" class="headerlink" title="1.4.2类的继承"></a>1.4.2类的继承</h5><p>两个关键字</p>
-<ul>
-<li><strong>extends</strong></li>
-<li><strong>super</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class Greeter &#123;</span><br><span class="line">  greeting: string;//属性 前面省略了public关键字</span><br><span class="line">  constructor(message: string) &#123;//构造函数 实例化类的时候触发的方法</span><br><span class="line">      this.greeting = message;</span><br><span class="line">  &#125;</span><br><span class="line">  greet():string &#123;</span><br><span class="line">      return &quot;Hello, &quot; + this.greeting;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">let greeter = new Greeter(&quot;world&quot;);</span><br><span class="line">greeter.greet()</span><br><span class="line">alert(greeter.greet())</span><br><span class="line"></span><br><span class="line">//继承</span><br><span class="line">class Web extends Greeter&#123;</span><br><span class="line">  constructor(message:string)&#123;</span><br><span class="line">    super(message);//初始化类的数据结构(实例化我们的子例)表示调用父类的构造函数</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">let w = new Web(&quot;李四&quot;);</span><br><span class="line">alert(w.greet())</span><br></pre></td></tr></table></figure>
-<h5 id="1-4-3类里面的修饰符"><a href="#1-4-3类里面的修饰符" class="headerlink" title="1.4.3类里面的修饰符"></a>1.4.3类里面的修饰符</h5>typescript里面在定义属性的时候给我们提供了三种修饰符</li>
-<li>public 公有 在类里面 子类 类外边都可以访问</li>
-<li>protected 保护类型在类里面  子类里面可以访问  在类外面无法访问</li>
-<li>private 私有  在类里面 可以访问  子类  类外边无法访问</li>
-<li>属性如果不加修饰符 默认就是公有</li>
-</ul>
-<h5 id="1-4-4静态方法"><a href="#1-4-4静态方法" class="headerlink" title="1.4.4静态方法"></a>1.4.4静态方法</h5><h5 id="1-4-5多态"><a href="#1-4-5多态" class="headerlink" title="1.4.5多态"></a>1.4.5多态</h5><p>父类定义的方法不去实现 让继承他的子类去实现 每个子类有不同的表现 多态也是继承的一种表示</p>
-<h5 id="1-4-6抽象方法-标准"><a href="#1-4-6抽象方法-标准" class="headerlink" title="1.4.6抽象方法(标准)"></a>1.4.6抽象方法(标准)</h5><ul>
-<li><p>typescripit 中的抽象类:他是提供其他类继承的基类,不能实例化</p>
-</li>
-<li><p>用<strong>abstract</strong>关键字定义的抽象类和抽象方法 抽象类中多的抽象方法不包含具体的实现并且必须在派生类中实现</p>
-</li>
-<li><p>abstract抽象方法只能放在抽象类里面</p>
-</li>
-<li><p>抽象类和抽象方法用来定义标准 (这个类要求他的子类必须实现他的抽象方法)</p>
-</li>
-<li><p>抽象类中其他方法可以不实现但是抽象方法必须要实现</p>
-<h4 id="1-5typescript中的接口-定义标准"><a href="#1-5typescript中的接口-定义标准" class="headerlink" title="1.5typescript中的接口(定义标准)"></a>1.5typescript中的接口(定义标准)</h4></li>
-<li><p><em>接口的作用*</em>: 在面向对象的编程中 接口是一种规范的定义 他定义了行为和动作的规范 在程序设计里面 接口起到一种限制和规范的作用 接口定义了某一批类所需要遵守的规范 接口不关系这些类的内部状态数据 也不关心这些类里方法的实现细节 他只规定这批类里必须提供某些方法  提供这些方法的类可以满足实际需求 typescript中的接口类似于java 同时还增加了更灵活的接口 类型  包括属性 函数可索引和类等</p>
-</li>
-</ul>
-<p>接口: 行为和动作的规范 对批量方法进行约束<br>通过<strong>interface</strong>这个关键字来定义接口</p>
-<ol>
-<li><p>属性类接口  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//需求必须传入对象 firstname 和secondname</span><br><span class="line">    interface fullName&#123;</span><br><span class="line">      firstname:string;//注意分号结束</span><br><span class="line">      secondname:string;</span><br><span class="line">    &#125;</span><br><span class="line">    function pt(name:fullName)&#123;</span><br><span class="line">      console.log(name.firstname+&quot;======&quot;+name.secondname);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    var obj=&#123;/* 传入的参数必须包括firstname和secondname */</span><br><span class="line">      firstname:&quot;zhang&quot;,</span><br><span class="line">      secondname:&apos;san&apos;</span><br><span class="line">    &#125;</span><br><span class="line">    pt(obj)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>可选属性接口</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">interface fullname&#123;</span><br><span class="line">    firstname:string</span><br><span class="line">    secondname?:string//?可传可不传</span><br><span class="line">  &#125;</span><br><span class="line">  function getname(name:fullname)&#123;</span><br><span class="line">    console.log(name);</span><br><span class="line">  &#125;</span><br><span class="line">  getname(&#123;</span><br><span class="line">    // secondname:&quot;ahfoa&quot;,</span><br><span class="line">    firstname:&quot;mmmm&quot;</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><p>函数类型的接口:<br>对方法传入的参数以及返回值进行约束</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//对传入的参数以及返回值进行约束 批量约束</span><br><span class="line">interface encrypt&#123;</span><br><span class="line">  (key:string,value:string):string;</span><br><span class="line">&#125;</span><br><span class="line">var abs:encrypt=function(key:string,value:string):string&#123;</span><br><span class="line">  return key+value;</span><br><span class="line">&#125;</span><br><span class="line">abs(&quot;name&quot;,&quot;zhangs&quot;)</span><br><span class="line">console.log(abs(&quot;name&quot;,&quot;zhangs&quot;));</span><br></pre></td></tr></table></figure>
-<ol start="4">
-<li>可索引接口和类类型接口</li>
-</ol>
-<ul>
-<li>可索引接口:数组对象的约束   </li>
-</ul>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">interface arrs&#123;</span><br><span class="line">          [index:number]:string</span><br><span class="line">        &#125;</span><br><span class="line">        var arr1:arrs=[&quot;123&quot;,&quot;bbb&quot;]</span><br><span class="line">        console.log(arr1[0]);</span><br><span class="line">        interface obj&#123;</span><br><span class="line">          [index:string]:string</span><br><span class="line">        &#125;</span><br><span class="line">        var srr1:obj=&#123;</span><br><span class="line">          name:&quot;zhangshang&quot;,</span><br><span class="line">          name1:&quot;lisi&quot;</span><br><span class="line">        &#125;</span><br><span class="line">        console.log(srr1.name);</span><br></pre></td></tr></table></figure>
-
-<pre><code>* 类类型接口:对类的约束 (和抽象类有点类似)
-implements</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">interface animer&#123;</span><br><span class="line">         name:string;</span><br><span class="line">         eat(str:string):void</span><br><span class="line">       &#125;</span><br><span class="line">       class Bog implements animer&#123;</span><br><span class="line">         name:string</span><br><span class="line">         constructor(name:string)&#123;</span><br><span class="line">           this.name =name;</span><br><span class="line">         &#125;</span><br><span class="line">         eat()&#123;</span><br><span class="line">           console.log(this.name+&apos;吃狗粮&apos;);</span><br><span class="line">         &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       var d = new Bog(&quot;啊黄&quot;)</span><br><span class="line">       d.eat()</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>接口的扩展<br>接口可以继承接口</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">interface anmor&#123;</span><br><span class="line">  eat():void;</span><br><span class="line">&#125;</span><br><span class="line">interface Person extends anmor&#123;</span><br><span class="line">  work():void;</span><br><span class="line">&#125;</span><br><span class="line">class Web implements Person&#123;</span><br><span class="line">    public name:string;</span><br><span class="line">    constructor (name:string)&#123;</span><br><span class="line">      this.name=name;</span><br><span class="line">    &#125;</span><br><span class="line">    eat()&#123;</span><br><span class="line">      console.log(this.name+&apos;xihua&apos;);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    work()&#123;</span><br><span class="line">      this.name+&quot;xiedaima&quot;;</span><br><span class="line">      console.log(this.name+&quot;xiedaima&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">var b = new Web(&quot;小李&quot;)</span><br><span class="line">b.eat()</span><br><span class="line">b.work()</span><br></pre></td></tr></table></figure>
-<h4 id="1-6泛型"><a href="#1-6泛型" class="headerlink" title="1.6泛型"></a>1.6泛型<T></h4><p>  解决类 接口 方法的重用性 以及对不特定数据类型的支持<br>  泛型可以支持不特定的数据类型 </p>
-<ul>
-<li>泛型</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// T 表示泛型 具体什么类型是调用这个方法的时候决定的</span><br><span class="line">    function getData&lt;T&gt;(value:T):T&#123;//这个T可以是任意大写字母  但是这三个必须是一样的最好是用T</span><br><span class="line">      return value;</span><br><span class="line">    &#125;</span><br><span class="line">    getData&lt;number&gt;(123)</span><br><span class="line">    getData&lt;string&gt;(&quot;2313&quot;)</span><br><span class="line">    function getData1&lt;T&gt;(value:T):any&#123;</span><br><span class="line">      return value;</span><br><span class="line">    &#125;</span><br><span class="line">    getData1&lt;number&gt;(123)//参数必须是number</span><br><span class="line">    getData1&lt;string&gt;(&quot;2313&quot;)//参数必须是string</span><br></pre></td></tr></table></figure>
-<ul>
-<li>泛型类</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">// 泛型类</span><br><span class="line">class Min&lt;T&gt;&#123;</span><br><span class="line">  public list :T[]=[];</span><br><span class="line">  add(num:T)&#123;</span><br><span class="line">    this.list.push(num)</span><br><span class="line">  &#125;</span><br><span class="line">  min():T&#123;</span><br><span class="line">    var minNum=this.list[0];</span><br><span class="line">    for(var i = 0;i&lt;this.list.length;</span><br><span class="line">      i++)&#123;</span><br><span class="line">        if(minNum&gt;this.list[i])&#123;</span><br><span class="line">          minNum=this.list[i]</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    return minNum;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">var m = new Min&lt;number&gt;()//实例化类 并且制定了类的代表类型是number</span><br><span class="line">m.add(8)</span><br><span class="line">m.add(22)</span><br><span class="line">m.add(82)</span><br><span class="line">m.add(3)</span><br><span class="line">console.log(m.min())</span><br><span class="line">var m1 = new Min&lt;string&gt;()//实例化类 并且制定了类的代表类型是number</span><br><span class="line">m1.add(&quot;b&quot;)</span><br><span class="line">m1.add(&quot;a&quot;)</span><br><span class="line">m1.add(&quot;c&quot;)</span><br><span class="line">m1.add(&quot;d&quot;)</span><br><span class="line">console.log(m1.min())</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>泛型的接口<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">interface Config&#123;</span><br><span class="line">  &lt;T&gt;(value:T):T</span><br><span class="line">&#125;</span><br><span class="line">var setData:Config=function&lt;T&gt;(value:T):T&#123;</span><br><span class="line">  return value</span><br><span class="line">&#125;</span><br><span class="line">setData(&quot;name&quot;)</span><br><span class="line">console.log(setData&lt;string&gt;(&quot;name&quot;));</span><br><span class="line">interface Configs&lt;T&gt;&#123;</span><br><span class="line">  (value:T):T</span><br><span class="line">&#125;</span><br><span class="line">function getData&lt;T&gt;(value:T):T&#123;</span><br><span class="line">  return value</span><br><span class="line">&#125;</span><br><span class="line">var setDatas:Configs&lt;string&gt;=getData;</span><br><span class="line">setDatas(&quot;20&quot;)</span><br><span class="line">console.log(setDatas(&quot;20&quot;));</span><br></pre></td></tr></table></figure>
-<h4 id="1-7类作为参数来约束数据传入的类型"><a href="#1-7类作为参数来约束数据传入的类型" class="headerlink" title="1.7类作为参数来约束数据传入的类型"></a>1.7类作为参数来约束数据传入的类型</h4></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">class Mysql&lt;T&gt;&#123;</span><br><span class="line">  add(info:T):boolean&#123;</span><br><span class="line">    console.log(info);</span><br><span class="line">    return true;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">// 定义一个user类 在数据库中进行映射</span><br><span class="line">class User&#123;</span><br><span class="line">  username:string|undefined;</span><br><span class="line">  password:string|undefined;</span><br><span class="line">&#125;</span><br><span class="line">var u = new User();</span><br><span class="line">u.username=&quot;zhangs&quot;;</span><br><span class="line">u.password=&quot;lis&quot;;</span><br><span class="line">var m=new Mysql&lt;User&gt;();</span><br><span class="line">m.add(u);</span><br><span class="line">// 定义一个wen类 </span><br><span class="line">class Wen&#123;</span><br><span class="line">  title:string|undefined;</span><br><span class="line">  desc:string|undefined;</span><br><span class="line">  status:number|undefined;</span><br><span class="line">  constructor(params:&#123;</span><br><span class="line">    title:string|undefined,</span><br><span class="line">    desc:string|undefined,</span><br><span class="line">    status?:number|undefined</span><br><span class="line">  &#125;)&#123;</span><br><span class="line">    this.title=params.title</span><br><span class="line">    this.desc=params.desc</span><br><span class="line">    this.status=params.status</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">var w = new Wen(&#123;</span><br><span class="line">  title:&apos;文章标题&apos;,</span><br><span class="line">  desc:&apos;abcdefghijklmnopqrstuvwxyz&apos;</span><br><span class="line">&#125;);</span><br><span class="line">var b=new Mysql&lt;Wen&gt;()</span><br><span class="line">b.add(w)</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/22/typescript/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexo搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/22/hexo%E6%90%AD%E5%BB%BA/">hexo搭建</a>
+    <h1 class="article-title" itemprop="name">
+      hexo搭建
     </h1>
   
 
@@ -347,6 +197,27 @@ implements</code></pre><figure class="highlight plain"><table><tr><td class="gut
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -354,16 +225,79 @@ implements</code></pre><figure class="highlight plain"><table><tr><td class="gut
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/22/hexo%E6%90%AD%E5%BB%BA/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/22/hexo%E6%90%AD%E5%BB%BA/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/11/22/typescript/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          typescript
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -383,8 +317,14 @@ implements</code></pre><figure class="highlight plain"><table><tr><td class="gut
 
 
 
+  
+  
+  
 
   
+
+  
+
   
 
 
@@ -407,8 +347,8 @@ implements</code></pre><figure class="highlight plain"><table><tr><td class="gut
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
